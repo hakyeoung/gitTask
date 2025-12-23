@@ -1,12 +1,34 @@
 /* style.css */
+
+/* CSS 변수 정의 - 다크 테마 기본값 */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --header-bg: #2d2d2d;
+  --header-padding: 20px;
+  --border-color: transparent;
+}
+
+/* 라이트 테마 변수 */
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #f0f0f0;
+  --header-padding: 15px;
+  --border-color: #ddd;
+}
+
+/* 실제 스타일 적용 */
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #2d2d2d;
-  padding: 20px;
+  background-color: var(--header-bg);
+  padding: var(--header-padding);
+  border-bottom: 2px solid var(--border-color);
 }

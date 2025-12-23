@@ -5,11 +5,16 @@
     <title>My Website</title>
   </head>
   <body>
-
     <header>
       <h1>My Awesome Website</h1>
+      <button onclick="toggleTheme()">🌓 테마 전환</button>
       <nav>Home | About | Contact</nav>
     </header>
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("light-theme");
+      }
+    </script>
 
     <aside>
       <ul>
